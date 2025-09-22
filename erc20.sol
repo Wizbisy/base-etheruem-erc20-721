@@ -49,7 +49,7 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 contract AdvancedERC20 is ERC20, ERC20Burnable, ERC20Snapshot, ERC20Permit, Pausable, Ownable {
     using SafeMath for uint256;
 
-    uint256 public transferFeeBP; // fee in basis points (e.g., 100 = 1%)
+    uint256 public transferFeeBP; // fee in basis points (e.g., 100 = 1%).
     address public feeRecipient;
 
     uint256 public maxTxAmount; // anti-whale: max per transfer (0 = disabled)
