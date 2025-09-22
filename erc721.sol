@@ -75,7 +75,7 @@ contract AdvancedERC721 is ERC721Enumerable, ERC721Burnable, ERC721Pausable, ERC
         }
     }
 
-    // ------------------ Admin functions ------------------
+    // ------------------ Admin functions -------------------
     function pause() external onlyOwner { _pause(); }
     function unpause() external onlyOwner { _unpause(); }
 
@@ -146,3 +146,4 @@ contract AdvancedERC721 is ERC721Enumerable, ERC721Burnable, ERC721Pausable, ERC
     receive() external payable {}
     fallback() external payable {}
 }
+
