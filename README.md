@@ -71,9 +71,10 @@ uint256 initialSupply_,
 uint256 maxSupply_,
 uint256 feeBasisPoints_
 )
+```
 
-Deploy ERC721
-
+### Deploy ERC721
+```solidity
 constructor(
   string memory name_,
   string memory symbol_,
